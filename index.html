@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id"
+<html lang="id">
 <head>
     <meta charset="=UTF-8"
     <title>Kantin - kasir Mini</title>
@@ -95,11 +95,73 @@
             text-align: center;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
         }
+
         /* Mengatur ukuran gambar produk di dalam kartu */
         .card-menu img {
             width: 100%;
             height: 140px;
             object-fit: cover;
         }
+
+        /* Memberikan jarak bagian dalam untuk teks info produk */
+        .card-info {
+            padding: 15px;
+        }
+
+        /* Mengatur teks harga menjadi berwarna oranye dan tebal */
+        .harga {
+            color: #e67e22;
+            font-weight: bold;
+        }
      </style>
 </head>
+<body>
+    <div class="container">
+        <!-- Bagian Kepala Halaman Web -->
+        <header>
+            <h1>Kantinpintar - kasir Mini</h1>
+            <p>Tahap 1: Membuat Struktur Halaman Utama</p>
+        </header>
+
+        <!-- Area Tata Letak Utama -->
+         <div class="main-layout">
+
+            <!--PANEL SEBELAH KIRI: FORM INPUT DATA BARU-->
+            <div class="form-panel">
+                <h3>Tambah Menu Baru</h3>
+                <div class="form-group">
+                    <label>Nama Makanan</label>
+                    <input type="text" placeholder="Contoh: Bakso">
+                </div>
+                <div class="form-group">
+                    <label>Harga (Rp)</label>
+                    <input type="number" placeholder="Contoh: 10000">
+                </div>
+                <div class="form-group">
+                    <label>Status</label>
+                    <select>
+                        <option value="Tersedia">Tersedia</option>
+                        <option value="Habis">Habis</option>
+                    </select>
+                </div>
+                <button class="btn-simpan">Simpan ke Menu</button>
+            </div>
+
+            <!-- PANEL SEBELAH KANAN: ETALASE PRODUK -->
+            <div class="etalase-panel">
+
+            <!-- contoh elemen kartu menu statis -->
+            <div class="card-menu">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" alt="Makanan">
+                <div class="card-info">
+                    <h3>Nasi pecel Madiun</h3>
+                    <div class="harga">Rp 12.000</div>
+                </div>
+            </div>
+            </div>
+
+         </div>
+
+    </div>
+</body>
+</html>
